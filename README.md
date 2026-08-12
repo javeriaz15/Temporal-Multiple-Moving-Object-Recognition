@@ -137,6 +137,20 @@ This makes the work particularly relevant to scenarios where:
 
 ---
 
+## Experimental Results
+
+The recognition approach was evaluated on both individual moving objects and scenes containing multiple moving vehicles.
+
+- **Single-object tests:** nearest descriptive-proximity scores ranged from **81.1% to 99.7%**
+- **Multiple-object tests:** eight detected objects across four multi-object videos produced nearest descriptive-proximity scores from **90.8% to 99.9%**
+- **Broader test results:** 28 of 33 reported results had nearest descriptive-proximity scores above **90%**
+
+> Descriptive proximity represents descriptor-based similarity and should not be interpreted as conventional classification accuracy.
+
+[View Detailed Results](docs/results.md)
+
+---
+
 ## Repository Structure
 
 ```text
