@@ -126,6 +126,24 @@ Of these, **28 of 33 reported results** produced nearest descriptive-proximity v
 Again, these percentages represent **descriptor-based similarity/nearness**, rather than conventional classification accuracy.
 
 ---
+## Summary Metrics
+
+The following summary statistics are derived from the descriptive-proximity values reported in the experimental results.
+
+| Evaluation Set | Number of Results | Mean Descriptive Proximity | Median | Range |
+|---|---:|---:|---:|---:|
+| Single-object tests | 12 | 93.5% | 95.35% | 81.1–99.7% |
+| Multiple-object detections | 8 | 95.0% | 94.8% | 90.8–99.9% |
+| Combined listed experiments | 20 | 94.1% | 95.35% | 81.1–99.9% |
+
+Across the broader distribution of **33 reported test results**:
+
+- **28 of 33 (84.8%)** produced nearest descriptive-proximity scores in the **91–100% range**
+- **19 of 33 (57.6%)** produced nearest descriptive-proximity scores in the **96–100% range**
+
+> These statistics summarize descriptor-based similarity scores. They are not conventional classification accuracy, precision, recall, or F1 scores.
+
+---
 
 ## Example: Viewpoint Variation
 
