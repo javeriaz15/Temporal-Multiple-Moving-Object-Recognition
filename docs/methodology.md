@@ -488,11 +488,11 @@ Output:
 
 # 14. Multiple-Object Checkerboard Extension
 
-During training, the relationships among the 18 training objects can be represented using an **18 × 18 descriptive-proximity checkerboard**.
+During training, descriptive-proximity relationships among the **18 training vehicle classes** are represented using an **18 × 18 checkerboard**.
 
-When additional test objects are introduced, the matrix is extended.
+When new test objects are detected, the checkerboard is dynamically extended by adding one row and one column for each detected object.
 
-For example, when two moving test objects are detected:
+For example, Test Video 31 contains two detected moving vehicles:
 
 ```text
 Training Objects = 18
@@ -500,7 +500,7 @@ Training Objects = 18
 Test Object 1 → Row / Column 19
 Test Object 2 → Row / Column 20
 
-Resulting Matrix = 20 × 20
+Extended Descriptive-Proximity Matrix = 20 × 20
 ```
 
 The additional rows and columns contain descriptive-proximity values between each detected test object and the existing training samples.
