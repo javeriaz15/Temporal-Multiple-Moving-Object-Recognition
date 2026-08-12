@@ -15,6 +15,58 @@ The approach was developed for a **one-shot recognition setting**, where each ob
 
 ---
 
+## Conceptual Motivation: Similarity-Based Recognition
+
+The recognition methodology was conceptually motivated by **similarity-based learning approaches**, including the principle used by Siamese Neural Networks.
+
+Traditional multiclass classifiers typically learn a direct mapping from an input to a set of class probabilities and often require many labeled examples for each class.
+
+Similarity-based approaches instead compare representations of two observations and determine how similar or different they are.
+
+This research applies that general principle to a **non-neural, shape-based video recognition framework**.
+
+Rather than training a neural network to output a class probability, the proposed approach:
+
+1. extracts a temporal 4D shape-descriptor set from a detected moving object
+2. compares that descriptor with the descriptor sets of the available training objects
+3. calculates a **descriptive-proximity measure**
+4. identifies objects as descriptively near or far based on their geometric and temporal characteristics
+
+Conceptually:
+
+```text
+Traditional Classification
+
+Input Object
+     ↓
+Classifier
+     ↓
+Class Probabilities
+     ↓
+Predicted Class
+
+
+Similarity-Based Recognition
+
+Test Object ──→ Descriptor ──┐
+                             ├── Comparison → Similarity
+Reference Object → Descriptor ┘
+
+
+Proposed Thesis Approach
+
+Moving Test Object
+       ↓
+Temporal 4D Shape Descriptor
+       ↓
+Compare with Training Descriptor Sets
+       ↓
+Descriptive Proximity
+       ↓
+Descriptively Near / Far Objects
+
+---
+
 ## System Pipeline
 
 ```text
