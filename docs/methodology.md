@@ -509,52 +509,15 @@ This representation makes it possible to compare multiple detected objects again
 
 ---
 
-# 15. Experimental Results
+# 15. Experimental Evaluation
 
-The experiments evaluated single and multiple moving vehicles under different outdoor conditions.
+The methodology was evaluated on both **single-object and multiple-object video sequences**, including changes in viewpoint, vehicle type, location, and luminance.
 
-Example single-object descriptive-nearness results reported in the thesis include:
+The experiments compare test-object shape descriptors against the 18 training-object descriptor sets using descriptive proximity.
 
-| Test Scenario                        | Highest Descriptive Proximity |
-| ------------------------------------ | ----------------------------: |
-| Test Vehicle 1                       |                         84.8% |
-| Test Vehicle 2 / Viewpoint Variation |                         96.2% |
-| Test Vehicle 3                       |                         99.7% |
-| Test Vehicle 4                       |                         81.1% |
-| Test Vehicle 5                       |                         94.1% |
-| Test Vehicle 6                       |                         99.6% |
+Detailed quantitative results, including single-object tests, multiple-object tests, and the descriptive-proximity distribution, are available in:
 
-These percentages represent **descriptive proximity/similarity**, not conventional classification accuracy.
-
----
-
-## Multiple-Object Example
-
-In one multiple-moving-object experiment:
-
-| Detected Object | Descriptively Nearest Training Sample | Proximity |
-| --------------- | ------------------------------------- | --------: |
-| Moving Object 1 | Training Vehicle 1                    |     98.9% |
-| Moving Object 2 | Training Vehicle 1                    |     91.4% |
-
-The same objects also produced descriptively far relationships of approximately **3.9%** and **1.9%** with other training samples.
-
----
-
-## Descriptive-Proximity Distribution
-
-Across the test videos summarized in the thesis:
-
-| Descriptive Proximity | Number of Test Videos |
-| --------------------- | --------------------: |
-| 81–85%                |                     3 |
-| 86–90%                |                     2 |
-| 91–95%                |                     9 |
-| 96–100%               |                    19 |
-
-A total of **33 test-video results** are represented in this distribution.
-
-Again, these values describe the **nearest descriptive-proximity scores**, rather than a conventional classification-accuracy metric.
+[View Experimental Results](results.md)
 
 ---
 
